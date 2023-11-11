@@ -3,7 +3,7 @@ import * as S from "./styles"
 import { useDispatch, useSelector } from 'react-redux'
 import { changeTheme } from '../features/Slice'
 import Theme from '../global/styles/theme'
-import ThemeButton from "./themeButton"
+import ThemeButton from "./ThemeButton"
 import Language from './Language'
 import Menu from './Menu'
 
