@@ -72,6 +72,7 @@ export const Image = styled.div`
         margin:10px auto;
         background-image:url(${props=>props.$image});
         background-size:cover;
+        
     `
 export const Title = styled.h1`
     color:${theme.lightTheme.blue};
