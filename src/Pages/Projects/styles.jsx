@@ -3,7 +3,7 @@ import Theme from "../../global/styles/theme";
 
 export const Projects=styled.div`
     min-height:100vh;
-    height:max-content;
+    height:auto;
     display:flex;
     align-items:center;
     flex-direction:column;
@@ -33,7 +33,7 @@ grid-template-columns:repeat(3,1fr);
 gap:30px;
 margin-bottom:40px;
 @media (max-width:950px){
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(2,1fr)
 }
 @media (max-width:800px){
     grid-template-columns:1fr;
