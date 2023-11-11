@@ -29,3 +29,9 @@ export const Image=styled.img`
     cursor: pointer;
     
 `
+export const ImageW=styled.img`
+    position:absolute;
+    right:0;
+    cursor: pointer;
+    
+`

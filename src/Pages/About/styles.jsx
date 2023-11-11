@@ -19,6 +19,10 @@ export const ImageWrapper = styled.div`
     @media (max-width:950px){
     height:300px;
     width:300px;
+    }
+    @media (max-height:550px){
+    height:150px;
+    width:150px;
     
     }
 `
