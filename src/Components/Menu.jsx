@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Theme from '../global/styles/theme'
-import ThemeButton from './themeButton'
+import ThemeButton from './ThemeButton'
 import { BiMenu } from "react-icons/bi"
 import Language from './Language'
 import * as S from "./menustyle"
