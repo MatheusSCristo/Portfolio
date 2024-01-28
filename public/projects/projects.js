@@ -27,6 +27,20 @@ const projects = [
             pt: "Este projeto é uma página de mídia social que permite a comunicação com outras pessoas por mensagem em tempo real, para o serviço backend foi utilizado o Firebase que permite autenticação e armazenamento de informações dos usuários."
         },
         languages: ["JS", "React", "CSS","Firebase","Styled-Components"]
+    },
+    {
+        title: {
+            en: "Mangai's Restaurant ",
+            pt: "Restaurante Mangai"
+        },
+        img: "/imgs/Mangai.png",
+        git: "https://github.com/MatheusSCristo/MangaiPage",
+        deploy: "https://matheusscristo.github.io/MangaiPage/",
+        description: {
+            en: "This is a non-profit page project for the  Brazilian restaurant Mangai.",
+            pt: "Esse é um projeto de página para o restaurante brasileiro Mangai,sem fins lucrativos."
+        },
+        languages: ["JS", "React", "CSS","Tailwind"]
     }
 
 ]
