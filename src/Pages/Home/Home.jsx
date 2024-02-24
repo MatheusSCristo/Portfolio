@@ -32,7 +32,7 @@ const home = () => {
             <S.Image src='/imgs/Github.svg' width={"25px"} />
             <S.LinkText theme={theme}>Github</S.LinkText>
           </S.LinkWrapper>
-          <S.LinkWrapper as="a" href='https://www.linkedin.com/in/matheus-senas-cristo-856950293/' target='_blank' >
+          <S.LinkWrapper as="a" href='https://www.linkedin.com/in/matheuscristodev/' target='_blank' >
             <S.Image src='/imgs/Linkedin.svg' width={"30px"} />
             <S.LinkText theme={theme}>Linkedin</S.LinkText>
           </S.LinkWrapper>

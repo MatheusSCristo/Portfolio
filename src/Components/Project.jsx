@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import * as S from './styles'
 import { useSelector } from 'react-redux'
-import projects from '../../public/projects/projects'
-import { BiLogoJavascript, BiLogoReact, BiSolidFileCss } from "react-icons/bi"
+import { BiLogoJavascript, BiLogoReact, BiLogoTailwindCss, BiSolidFileCss } from "react-icons/bi"
+import { TbBrandNextjs } from "react-icons/tb";
 
-const Project = ({project}) => {
+const Project = ({ project }) => {
   const theme = useSelector((state) => state.config.theme)
   const language = useSelector((state) => state.config.language)
   const [activeDetail, setActiveDetail] = useState(false)
@@ -29,12 +29,13 @@ const Project = ({project}) => {
           </>
           }
           <S.Container>
-
             {project.languages.map((language, i) => {
               switch (language) {
                 case "JS": return <BiLogoJavascript size={30} key={i} />
                 case "React": return <BiLogoReact size={30} key={i} />
                 case "CSS": return <BiSolidFileCss size={30} key={i} />
+                case "Tailwind": return <BiLogoTailwindCss size={30} key={i} />
+                case "Next": return <TbBrandNextjs size={30} key={i} />
               }
             }
             )}

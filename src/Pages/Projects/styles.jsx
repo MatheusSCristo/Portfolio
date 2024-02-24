@@ -8,7 +8,7 @@ export const Projects=styled.div`
     align-items:center;
     flex-direction:column;
     background-color:${props=>props.theme==="light"?Theme.lightTheme.background:Theme.darkTheme.background};
-
+    gap:3em;
 `
 export const Title=styled.h1`
     color:${Theme.lightTheme.blue};

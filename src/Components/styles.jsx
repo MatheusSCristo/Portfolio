@@ -110,7 +110,7 @@ export const Container = styled.div`
        align-items:center;
        margin:10px;
     }
-    
+    gap:10px; 
     `
 
 export const Info=styled.div`
@@ -122,7 +122,7 @@ export const Info=styled.div`
     height:100%;
     background-color:#ffffffde;
     border-radius:5px; 
-
+    gap:15px
 `
 export const infos = styled.span`
     color:#000;

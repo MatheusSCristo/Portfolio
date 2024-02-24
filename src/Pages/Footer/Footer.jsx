@@ -21,7 +21,7 @@ const Footer = () => {
       }
       <S.Container>
         <S.Text>cristo.matheus@outlook.com</S.Text>
-        <S.Text>+55 (84) 99187-8729</S.Text>
+        <S.Text>+55 (84) 99211-2402</S.Text>
       </S.Container>
       <S.Text>Natal-RN</S.Text>
 

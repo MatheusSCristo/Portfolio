@@ -30,6 +30,7 @@ export const Title = styled.h1`
     color:${theme.lightTheme.blue};
     font-size:5em;
     margin:0 auto;
+    margin:0.5em;
     @media (max-width:950px){
     font-size:2em;
     }

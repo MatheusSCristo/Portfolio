@@ -41,6 +41,20 @@ const projects = [
             pt: "Esse é um projeto de página para o restaurante brasileiro Mangai,sem fins lucrativos."
         },
         languages: ["JS", "React", "CSS","Tailwind"]
+    },
+    {
+        title: {
+            en: "MyBlog",
+            pt: "MyBlog"
+        },
+        img: "/imgs/myblog.png",
+        git: "https://github.com/MatheusSCristo/Blog",
+        deploy: "https://blog-n98ehdeqx-my-team-ce7cf164.vercel.app/auth/login",
+        description: {
+            en: "This project is a Blog style social media page. In progress...",
+            pt: "Este projeto é uma página de mídia social estilo blog. Em andamento..."
+        },
+        languages: ["JS", "React", "CSS","Next","Tailwind","Prisma"]
     }
 
 ]
