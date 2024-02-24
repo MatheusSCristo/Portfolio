@@ -3,7 +3,7 @@ import Global from '../global/styles/theme'
 
 const initialState={
    theme:"light",
-   language:"en"
+   language:"pt"
 }
  const configSlice=createSlice({
     name:"config",
