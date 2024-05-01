@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiperClass{
+    padding-bottom: 50px;
+}
+
+*{
+    scroll-behavior: smooth;
+}
