@@ -11,6 +11,7 @@ const stack = [
   "Bootstrap",
   "PostgreSQL",
   "MySQL",
+  "Jest"
 ];
 
 const About = () => {
