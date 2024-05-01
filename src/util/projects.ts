@@ -22,7 +22,7 @@ export default [
     techs: ["React", "Tailwind", "Javascript"],
     deploy: "https://matheusscristo.github.io/MangaiPage/",
     github: "https://github.com/MatheusSCristo/MangaiPage",
-    image: "/images/mangai.png",
+    image: "/images/Mangai.png",
   },
   {
     title: "Message",
