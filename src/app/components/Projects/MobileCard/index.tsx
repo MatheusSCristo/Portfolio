@@ -1,6 +1,4 @@
 "use client";
-import getTechIcons from "@/util/getTechIcons";
-import projects from "@/util/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useState } from "react";
@@ -10,6 +8,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { A11y, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
+
+import getTechIcons from "@/util/getTechIcons";
+import projects from "@/util/projects";
+
 
 const MobileCard = () => {
   const [swiperRef, setSwiperRef] = useState<SwiperClass>();
@@ -61,7 +63,12 @@ const MobileCard = () => {
               <h1 className="text-3xl font-bold ">{project.title}</h1>
               <div className="flex flex-col items-center gap-2">
                 <div className="w-[300px] h-[150px] md:w-[250px] md:h-[200px] rounded-2xl relative">
-                  <Image src={project.image} alt="Project image" fill className="object-contain rounded-2xl"/>
+                  <Image
+                    src={project.image}
+                    alt="Project image"
+                    fill
+                    className="object-contain rounded-2xl"
+                  />
                 </div>
 
                 <div className="flex gap-2">
