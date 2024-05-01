@@ -11,7 +11,7 @@ export default [
       "Prisma",
       "Firebase",
     ],
-    deploy: "https://blog-ten-pi-55.vercel.app/",
+    deploy: "https://blog-xi-wheat.vercel.app/",
     github: "https://github.com/MatheusSCristo/Blog",
     image: "/images/blog.png",
   },
