@@ -62,7 +62,7 @@ const MobileCard = () => {
             <div className="flex flex-col items-center gap-3">
               <h1 className="text-3xl font-bold ">{project.title}</h1>
               <div className="flex flex-col items-center gap-2">
-                <div className="w-[300px] h-[150px] md:w-[250px] md:h-[200px] rounded-2xl relative">
+                <div className="w-[450px] h-[250px] md:w-[250px] md:h-[200px] rounded-2xl relative">
                   <Image
                     src={project.image}
                     alt="Project image"
@@ -96,10 +96,10 @@ const MobileCard = () => {
                   {getTechIcons(project.techs).map((icon) => (
                     <div
                       className="w-[40px] h-[40px] relative"
-                      key={project.title + icon}
+                      key={project.title + icon.title}
                     >
                       <Image
-                        src={`/icons/${icon}.svg`}
+                        src={`/icons/${icon.icon}.svg`}
                         alt="Tech icon"
                         fill
                         className="object-contain"
