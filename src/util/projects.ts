@@ -2,7 +2,7 @@ export default [
   {
     title: "MyBlog",
     description:
-      "O projeto é um blog desenvolvido com NextJS, Tailwind CSS e Typescript, proporcionando uma experiência de usuário moderna e responsiva. Foi utilizado PostgreSQL e Prisma para armazenamento e gerenciamento eficientes dos dados dos usuários, enquanto o Firebase oferece serviços adicionais, como armazenamento de imagens. Este blog oferece recursos avançados, incluindo autenticação segura, gerenciamento de conteúdo dinâmico e comentários interativos, garantindo uma plataforma robusta e escalável para compartilhamento de conteúdo.",
+      "O projeto é um blog desenvolvido com Next, Tailwind CSS e Typescript, proporcionando uma experiência de usuário moderna e responsiva. Foi utilizado PostgreSQL e Prisma para armazenamento e gerenciamento eficientes dos dados dos usuários, enquanto o Firebase oferece serviços adicionais, como armazenamento de imagens. Este blog oferece recursos avançados, incluindo autenticação segura, gerenciamento de conteúdo dinâmico e comentários interativos, garantindo uma plataforma robusta e escalável para compartilhamento de conteúdo.",
     techs: [
       "Next",
       "Tailwind",
@@ -13,7 +13,7 @@ export default [
     ],
     deploy: "https://blog-ten-pi-55.vercel.app/",
     github: "https://github.com/MatheusSCristo/Blog",
-    image: "/images/blog.png",
+    image: "/images/Blog.png",
   },
   {
     title: "Mangai",
@@ -32,5 +32,24 @@ export default [
     deploy: "https://matheusscristo.github.io/YourMessage/",
     github: "https://github.com/MatheusSCristo/YourMessage",
     image: "/images/Message.png",
+  },
+  {
+    title: "ShopPlus",
+    description:
+      "Projeto de um E-commerce, com o frontend construído em Next, Tailwind e Typescript, oferecemos uma experiência de usuário envolvente e altamente personalizada. Nos bastidores, o backend Java Spring Boot, junto com Spring Security e autenticação JWT, garante segurança e desempenho excepcionais. E para armazenar nossos dados valiosos, é utilizado o PostgreSQL. Juntos, foi possivel criar uma aplicação completa. ",
+    techs: [
+      "Tailwind",
+      "Next",
+      "Typescript",
+      "SpringBoot",
+      "Java",
+      "PostgreSQL",
+      "JUnit",
+      "Firebase",
+      "SpringSecurity",
+    ],
+    deploy: "https://shopplus-pi.vercel.app/",
+    github: "https://github.com/MatheusSCristo/eccomerce-backend",
+    image: "/images/ShopPlus.png",
   },
 ];

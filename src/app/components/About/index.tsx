@@ -46,7 +46,7 @@ const About = () => {
             {stack.map((item) => (
               <div
                 key={item}
-                className="bg-[#8d8d8d] text-white 2xl:min-w-[100px] max-w-fit rounded-lg text-center px-2 py-1"
+                className="bg-black text-white 2xl:min-w-[100px] max-w-fit rounded-sm text-center px-2 py-1"
               > 
                 <span>{item}</span>
               </div>

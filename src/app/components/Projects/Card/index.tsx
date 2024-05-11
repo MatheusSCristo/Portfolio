@@ -34,7 +34,7 @@ const Card = ({ project, index }: propsType) => {
         style={{ x }}
       >
         <div className="flex flex-col gap-2 items-center">
-          <div className="w-[500px] h-[250px] relative rounded-3xl hover:scale-110 duration-500">
+          <div className="w-[600px] h-[350px] relative rounded-3xl hover:scale-110 duration-500">
           <Image src={project.image} alt="Project image" fill className="object-contain rounded-3xl "/>
           </div>
 
@@ -55,10 +55,10 @@ const Card = ({ project, index }: propsType) => {
             <p className="text-xl font-text">{project.description}</p>
           </div>
           <div className="flex gap-2">
-            {getTechIcons(project.techs).map((icon) => (
-              <div className="w-[50px] h-[50px] relative" key={project.title + icon}>
+            {getTechIcons(project.techs).map((tech) => (
+              <div className="w-[50px] h-[50px] relative" key={project.title + tech.title} title={tech.title}>
                 <Image
-                  src={`/icons/${icon}.svg`}
+                  src={`/icons/${tech.icon}.svg`}
                   alt="Tech icon"
                   fill
                   className="object-contain"
