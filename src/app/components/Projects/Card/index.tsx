@@ -1,6 +1,6 @@
 "use client";
 import getTechIcons from "@/util/getTechIcons";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
@@ -20,20 +20,18 @@ type propsType = {
 
 const Card = ({ project, index }: propsType) => {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(
-    scrollYProgress,
-    [1.6, 0.5],
-    [index % 2 == 0 ? -3000 : 3000, 0]
-  );
-
+  
   return (
-    <div ref={ref}>
+    <div ref={ref} className="overflow-x-hidden">
       <motion.div
         className={`gap-5 ${
           index % 2 != 0 && "flex-row-reverse "
         } flex p-5 rounded-lg `}
-        style={{ x }}
+        initial={{ opacity: 0,x: index % 2?-500:500 }}
+        whileInView={{ opacity: 1,x:0 }}
+        viewport={{margin:"-150px 0px -400px 0px"}}
+        transition={{duration:1.2,ease:"easeInOut"}}
+        
       >
         <div className="flex flex-col gap-2 items-center">
           <div className="w-[600px] h-[350px] relative rounded-3xl hover:scale-110 duration-500">

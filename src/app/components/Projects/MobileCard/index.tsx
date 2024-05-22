@@ -1,4 +1,6 @@
 "use client";
+import getTechIcons from "@/util/getTechIcons";
+import projects from "@/util/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useState } from "react";
@@ -8,10 +10,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { A11y, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
-
-import getTechIcons from "@/util/getTechIcons";
-import projects from "@/util/projects";
-
 
 const MobileCard = () => {
   const [swiperRef, setSwiperRef] = useState<SwiperClass>();
