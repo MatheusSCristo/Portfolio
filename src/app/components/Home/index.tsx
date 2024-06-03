@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import { ReactTyped } from "react-typed";
 
 const Home = () => {
@@ -10,13 +11,22 @@ const Home = () => {
       id="home"
       className="flex items-center justify-center flex-col h-screen "
     >
-      <Link
-        href="#contact"
+      <ScrollLink
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
         className="uppercase text-xl md:text-2xl absolute top-5 right-5 cursor-pointer font-bold"
       >
         FALE COMIGO
-      </Link>
-      <motion.div initial={{opacity:0,y:25}} animate={{opacity:1,y:0}} transition={{duration:0.2}} className="flex flex-col items-center">
+      </ScrollLink>
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}
+        className="flex flex-col items-center"
+      >
         <h1 className="text-5xl md:text-8xl font-bold">Matheus Senas</h1>
         <h2>
           <ReactTyped
