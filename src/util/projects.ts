@@ -52,4 +52,17 @@ export default [
     github: "https://github.com/MatheusSCristo/eccomerce-backend",
     image: "/images/ShopPlus.png",
   },
+  {
+    title: "Solar Panels",
+    description:
+      "Landing page para uma empresa fictícia de paineis solares interativa criada utilizando React, TypeScript, Framer Motion para animações, react-scroll para navegação suave e Sass para estilização. ",
+    techs: [
+      "Sass",
+      "React",
+      "Typescript",
+    ],
+    deploy: "https://animation-solar-panels.vercel.app/",
+    github: "https://github.com/MatheusSCristo/animation-solar-panels",
+    image: "/images/SolarPanels.png",
+  },
 ];
