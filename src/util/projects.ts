@@ -16,13 +16,13 @@ export default [
     image: "/images/Blog.png",
   },
   {
-    title: "Mangai",
+    title: "53w53",
     description:
-      "Projeto de um site de restaurante desenvolvido com React, Tailwind CSS e Javascript. O site é responsivo e oferece uma experiência de usuário moderna e agradável. O site é composto por várias seções, incluindo um menu interativo, informações sobre o restaurante e uma galeria de imagens. O site é hospedado no Github e oferece uma experiência de usuário rápida e responsiva.",
-    techs: ["React", "Tailwind", "Javascript"],
-    deploy: "https://matheusscristo.github.io/MangaiPage/",
-    github: "https://github.com/MatheusSCristo/MangaiPage",
-    image: "/images/Mangai.png",
+      "Este projeto envolveu a criação de uma aplicação dinâmica, baseada no design incrível do site 53w53.com. Utilizando Next.js para renderização do lado do servidor, garantindo uma experiência rápida e eficiente, e Tailwind CSS para estilização, o site oferece uma experiência de usuário moderna e responsiva. Além disso, foram adicionadas animações fluidas para tornar a navegação mais envolvente e interativa.",
+    techs: ["Next", "Tailwind", "Javascript"],
+    deploy: "https://53w53.vercel.app/",
+    github: "https://github.com/MatheusSCristo/53w53",
+    image: "/images/53w53.png",
   },
   {
     title: "Message",
@@ -55,12 +55,8 @@ export default [
   {
     title: "Solar Panels",
     description:
-      "Landing page para uma empresa fictícia de paineis solares interativa criada utilizando React, TypeScript, Framer Motion para animações, react-scroll para navegação suave e Sass para estilização. ",
-    techs: [
-      "Sass",
-      "React",
-      "Typescript",
-    ],
+      "Landing page interativa para uma empresa fictícia de paineis solares, criada utilizando React, TypeScript, Framer Motion para animações, react-scroll para navegação suave e Sass para estilização. ",
+    techs: ["Sass", "React", "Typescript"],
     deploy: "https://animation-solar-panels.vercel.app/",
     github: "https://github.com/MatheusSCristo/animation-solar-panels",
     image: "/images/SolarPanels.png",
