@@ -61,4 +61,22 @@ export default [
     github: "https://github.com/MatheusSCristo/animation-solar-panels",
     image: "/images/SolarPanels.png",
   },
+  {
+    title: "GestorTI",
+    description:
+      "O projeto é um Gestor de Semestres para o curso de TI na UFRN, utilizando Spring Boot no backend para criar uma API segura e escalável, e Next.js com TypeScript no frontend para uma interface interativa e dinâmica. O sistema permite gerenciar semestres e disciplinas, com dados armazenados em um banco PostgreSQL, garantindo eficiência e confiabilidade."
+    ,techs: [
+      "Next",
+      "Tailwind",
+      "Typescript",
+      "PostgreSQL",
+      "Java",
+      "SpringBoot",
+      "SpringSecurity"
+      ],
+    deploy: "https://tech-front-five.vercel.app/",
+    github: "https://github.com/MatheusSCristo/tech_gestor_api",
+    image: "/images/GestaoTi.png",
+  },
+
 ];
