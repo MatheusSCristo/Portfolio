@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { Link as ScrollLink } from "react-scroll";
 import { ReactTyped } from "react-typed";
 
@@ -40,26 +40,16 @@ const Home = () => {
           <Link
             href="https://github.com/MatheusSCristo"
             target="_blank"
-            className="w-[35px] h-[35px] md:w-[50px] md:h-[50px] relative"
+            className=" relative"
           >
-            <Image
-              src={"/icons/githubIcon.svg"}
-              fill
-              className="object-cover"
-              alt="Github"
-            />
+            <BsGithub className="w-[35px] h-[35px] md:w-[50px] md:h-[50px]"/>
           </Link>
           <Link
             href="https://www.linkedin.com/in/matheuscristodev/"
             target="_blank"
-            className="w-[35px] h-[35px] md:w-[50px] md:h-[50px] relative"
+            className="relative"
           >
-            <Image
-              src={"/icons/linkedinIcon.svg"}
-              fill
-              className="object-cover"
-              alt="Linkedin"
-            />
+            <BsLinkedin className="w-[35px] h-[35px] md:w-[50px] md:h-[50px]" />
           </Link>
         </div>
       </motion.div>

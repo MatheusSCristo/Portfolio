@@ -18,10 +18,10 @@ const stack = [
 ];
 
 const About = () => {
-  const ref = useRef(null);    
+  const ref = useRef(null);
   const variants = {
-    visible: { opacity: 1,y:0},
-    hidden: { opacity: 0,y:25 },
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 25 },
   };
 
   return (
@@ -32,7 +32,7 @@ const About = () => {
         variants={variants}
         initial="hidden"
         whileInView="visible"
-        transition={{duration:1,ease:"easeInOut"}}
+        transition={{ duration: 1, ease: "easeInOut" }}
       >
         <div className="w-[250px] h-[250px] md:w-[450px] md:h-[450px] relative">
           <Image
@@ -43,30 +43,33 @@ const About = () => {
           />
         </div>
         <div className="flex flex-col gap-5 items-center">
-          <h1 className="text-3xl md:text-5xl font-bold">Sobre mim</h1>
-          <div className="text-xl md:text-2xl break-words xl:w-[700px] flex flex-col gap-4 font-text">
+          <h1 className="text-3xl md:text-5xl xl:text-7xl font-bold">Sobre mim</h1>
+          <div className="text-xl md:text-2xl break-words xl:w-[900px] flex flex-col gap-4 font-text">
             <p>
-              Embarcando no mundo do desenvolvimento de software em 2023,
-              descobri uma paixão pela tecnologia e desde então tenho me
-              dedicado incansavelmente para aprimorar meus conhecimentos
-              diariamente.
+              Desde que iniciei minha trajetória no desenvolvimento de software
+              em 2023, venho cultivando não só o domínio técnico, mas também
+              habilidades essenciais que impulsionam meu crescimento contínuo
+              como profissional.
             </p>
             <p>
-              Considero-me ágil e perseverante ao aprender novas linguagens e
-              tecnologias, sempre buscando desafios que me permitam colocar em
-              prática minhas habilidades de desenvolvedor.
+              Sou uma pessoa curiosa e autodidata, com facilidade para aprender
+              rapidamente e me adaptar a novas situações. Encaro desafios como
+              oportunidades de evolução e busco sempre entender o problema além
+              da solução técnica, prezando pela clareza, organização e propósito
+              no que construo. Tenho um forte senso de responsabilidade e
+              comprometimento com entregas de qualidade. Gosto de colaborar,
+              ouvir diferentes pontos de vista e contribuir ativamente em
+              equipes, sempre com foco em agregar valor ao produto e à
+              experiência do usuário.
             </p>
-            <p className="text-center">Minha stack é</p>
-            <div className="flex 2xl:w-[700px] flex-wrap gap-1 2xl:gap-5 ">
-              {stack.map((item) => (
-                <div
-                  key={item}
-                  className="bg-black text-white 2xl:min-w-[100px] max-w-fit rounded-sm text-center px-2 py-1"
-                >
-                  <span>{item}</span>
-                </div>
-              ))}
-            </div>
+
+            <p>
+              Acredito que a comunicação eficaz e o pensamento crítico são tão
+              importantes quanto saber programar. Minha trajetória tem sido
+              marcada pela perseverança, iniciativa e vontade genuína de crescer
+              — características que carrego em cada projeto, seja em ambientes
+              acadêmicos, corporativos ou pessoais.
+            </p>
           </div>
         </div>
       </motion.div>

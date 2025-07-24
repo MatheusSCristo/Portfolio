@@ -1,24 +1,45 @@
-export default (techs: string[]) => {
+import { IconType } from "react-icons";
+import {
+  FaJava,
+  FaJs,
+  FaReact,
+  FaSass
+} from "react-icons/fa";
+import {
+  SiFirebase,
+  SiJunit5,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiSpringboot,
+  SiSpringsecurity,
+  SiTailwindcss,
+  SiTypescript
+} from "react-icons/si";
+
+const getTechIcons = (techs: string[]) => {
     type techsIconsType = {
-      [tech: string]:{icon: string, title: string};
+      [tech: string]: { icon: IconType, title: string };
     };
   
     const techsIcons: techsIconsType = {
-      React: {icon:"reactIcon", title:"React"},
-      Java: {icon:"javaIcon", title:"Java"},
-      Javascript: {icon:"javascriptIcon", title:"JavaScript"},
-      Next: {icon:"nextIcon", title:"Next"},
-      PostgreSQL: {icon:"postgreIcon", title:"PostgreSQL"},
-      Sass: {icon:"sassIcon", title:"Sass"},
-      SpringBoot: {icon:"springBootIcon", title:"Spring Boot"},
-      Tailwind: {icon:"tailwindIcon", title:"TailwindCSS"},
-      Typescript: {icon:"typescriptIcon", title:"Typescript"},
-      Firebase: {icon:"firebaseIcon", title:"Firebase"},
-      Prisma: {icon:"prismaIcon", title:"Prisma"},
-      JUnit: {icon:"junitIcon", title:"JUnit"},
-      SpringSecurity:{icon:"springSecurityIcon",title:"Spring Security"}
+      React: { icon: FaReact, title: "React" },
+      Java: { icon: FaJava, title: "Java" },
+      Javascript: { icon: FaJs, title: "JavaScript" },
+      Next: { icon: SiNextdotjs, title: "Next" },
+      PostgreSQL: { icon: SiPostgresql, title: "PostgreSQL" },
+      Sass: { icon: FaSass, title: "Sass" },
+      SpringBoot: { icon: SiSpringboot, title: "Spring Boot" },
+      Tailwind: { icon: SiTailwindcss, title: "TailwindCSS" },
+      Typescript: { icon: SiTypescript, title: "Typescript" },
+      Firebase: { icon: SiFirebase, title: "Firebase" },
+      Prisma: { icon: SiPrisma, title: "Prisma" },
+      JUnit: { icon: SiJunit5, title: "JUnit" },
+      SpringSecurity: { icon: SiSpringsecurity, title: "Spring Security" }
     };
     return techs.map((tech) => {
       return techsIcons[tech];
     });
   };
+
+export default getTechIcons;

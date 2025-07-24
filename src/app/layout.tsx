@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${Amatic.className} bg-backgroundColor px-5 2xl:px-32 ${amarante.variable} `}>{children}</body>
+      <body className={`${Amatic.className} bg-zinc-900  px-5 2xl:px-32 ${amarante.variable} `}>{children}</body>
     </html>
   );
 }

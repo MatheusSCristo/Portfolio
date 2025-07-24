@@ -4,7 +4,7 @@ import projects from "@/util/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useState } from "react";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -26,14 +26,9 @@ const MobileCard = () => {
     <>
       <div
         onClick={handlePrevious}
-        className="hidden md:block md:w-[60px] md:h-[60px] relative"
+        className="hidden md:flex md:w-[60px] md:h-[60px] items-center justify-center cursor-pointer"
       >
-        <Image
-          src={"/icons/chevronLeft.svg"}
-          fill
-          className="object-cover"
-          alt="Seta para esquerda"
-        />
+        <FaChevronLeft size={40} />
       </div>
       <Swiper
         onSwiper={setSwiperRef}
@@ -93,15 +88,10 @@ const MobileCard = () => {
                 <div className="flex gap-2 flex-wrap">
                   {getTechIcons(project.techs).map((icon) => (
                     <div
-                      className="w-[40px] h-[40px] relative"
+                      className="w-[40px] h-[40px] flex items-center justify-center"
                       key={project.title + icon.title}
                     >
-                      <Image
-                        src={`/icons/${icon.icon}.svg`}
-                        alt="Tech icon"
-                        fill
-                        className="object-contain"
-                      />
+                      <icon.icon size={32} />
                     </div>
                   ))}
                 </div>
@@ -112,14 +102,9 @@ const MobileCard = () => {
       </Swiper>
       <div
         onClick={handleNext}
-        className="hidden md:block md:w-[60px] md:h-[60px] relative"
+        className="hidden md:flex md:w-[60px] md:h-[60px] items-center justify-center cursor-pointer"
       >
-        <Image
-          src={"/icons/chevronRight.svg"}
-          fill
-          className="object-cover"
-          alt="Seta para direita"
-        />
+        <FaChevronRight size={40} />
       </div>
     </>
   );

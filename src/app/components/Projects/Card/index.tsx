@@ -71,17 +71,11 @@ const Card = ({ project, index }: propsType) => {
           <div className="flex gap-2">
             {getTechIcons(project.techs).map((tech) => (
               <div
-                className="w-[50px] h-[50px] relative"
+                className="w-[50px] h-[50px] flex items-center justify-center"
                 key={project.title + tech.title}
                 title={tech.title}
               >
-                <Image
-                  src={`/icons/${tech.icon}.svg`}
-                  alt="Tech icon"
-                  fill
-                  className="object-contain"
-                  priority
-                />
+                <tech.icon size={40} />
               </div>
             ))}
           </div>

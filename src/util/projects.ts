@@ -1,20 +1,4 @@
-export default [
-  {
-    title: "MyBlog",
-    description:
-      "O projeto é um blog desenvolvido com Next, Tailwind CSS e Typescript, proporcionando uma experiência de usuário moderna e responsiva. Foi utilizado PostgreSQL e Prisma para armazenamento e gerenciamento eficientes dos dados dos usuários, enquanto o Firebase oferece serviços adicionais, como armazenamento de imagens. Este blog oferece recursos avançados, incluindo autenticação segura, gerenciamento de conteúdo dinâmico e comentários interativos, garantindo uma plataforma robusta e escalável para compartilhamento de conteúdo.",
-    techs: [
-      "Next",
-      "Tailwind",
-      "Typescript",
-      "PostgreSQL",
-      "Prisma",
-      "Firebase",
-    ],
-    deploy: "https://blog-xi-wheat.vercel.app/",
-    github: "https://github.com/MatheusSCristo/Blog",
-    image: "/images/Blog.png",
-  },
+const projects = [
   {
     title: "53w53",
     description:
@@ -25,34 +9,6 @@ export default [
     image: "/images/53w53.png",
   },
   {
-    title: "Message",
-    description:
-      "Projeto de um site de mensagens desenvolvido com React, Tailwind CSS e Firebase. O site oferece recursos avançados, como autenticação segura e armazenamento de mensagens em tempo real utilizando Firebase. O site é hospedado no Github.",
-    techs: ["React", "Tailwind", "Firebase", "Javascript"],
-    deploy: "https://matheusscristo.github.io/YourMessage/",
-    github: "https://github.com/MatheusSCristo/YourMessage",
-    image: "/images/Message.png",
-  },
-  {
-    title: "ShopPlus",
-    description:
-      "Projeto de um E-commerce, com o frontend construído em Next, Tailwind e Typescript, oferecemos uma experiência de usuário envolvente e altamente personalizada. Nos bastidores, o backend Java Spring Boot, junto com Spring Security e autenticação JWT, garante segurança e desempenho excepcionais. E para armazenar nossos dados valiosos, é utilizado o PostgreSQL. Juntos, foi possivel criar uma aplicação completa. ",
-    techs: [
-      "Tailwind",
-      "Next",
-      "Typescript",
-      "SpringBoot",
-      "Java",
-      "PostgreSQL",
-      "JUnit",
-      "Firebase",
-      "SpringSecurity",
-    ],
-    deploy: "https://shopplus-pi.vercel.app/",
-    github: "https://github.com/MatheusSCristo/eccomerce-backend",
-    image: "/images/ShopPlus.png",
-  },
-  {
     title: "Solar Panels",
     description:
       "Landing page interativa para uma empresa fictícia de paineis solares, criada utilizando React, TypeScript, Framer Motion para animações, react-scroll para navegação suave e Sass para estilização. ",
@@ -61,22 +17,6 @@ export default [
     github: "https://github.com/MatheusSCristo/animation-solar-panels",
     image: "/images/SolarPanels.png",
   },
-  {
-    title: "GestorTI",
-    description:
-      "O projeto é um Gestor de Semestres para o curso de TI na UFRN, utilizando Spring Boot no backend para criar uma API segura e escalável, e Next.js com TypeScript no frontend para uma interface interativa e dinâmica. O sistema permite gerenciar semestres e disciplinas, com dados armazenados em um banco PostgreSQL, garantindo eficiência e confiabilidade."
-    ,techs: [
-      "Next",
-      "Tailwind",
-      "Typescript",
-      "PostgreSQL",
-      "Java",
-      "SpringBoot",
-      "SpringSecurity"
-      ],
-    deploy: "https://tech-front-five.vercel.app/",
-    github: "https://github.com/MatheusSCristo/tech_gestor_api",
-    image: "/images/GestaoTi.png",
-  },
-
 ];
+
+export default projects;
