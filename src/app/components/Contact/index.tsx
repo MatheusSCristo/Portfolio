@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <>
-      <footer className="flex flex-col items-center py-10 text-white " id="contact">
+      <footer className="flex flex-col items-center py-10 text-black " id="contact">
         <h1 className="text-5xl font-bold">Contato</h1>
         <div className="flex gap-8 mt-8">
           <button

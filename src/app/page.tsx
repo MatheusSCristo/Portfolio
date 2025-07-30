@@ -28,7 +28,7 @@ const Index = () => {
   }, []);
   return (
     <>
-      <div className="relative flex flex-col items-center text-white">
+      <div className="relative flex flex-col items-center text-black">
         <Home />
         <About />
         <Techs/>
@@ -45,8 +45,8 @@ const Index = () => {
             repeat: !isNearBottom ? Infinity : 0,
             ease: "easeInOut"
           }}
-          className="sticky bottom-5 md:bottom-10 cursor-pointer">
-          <HiOutlineChevronDown size={50} color="white" />
+          className="sticky bottom-5 md:bottom-10 cursor-pointer z-[1000]">
+          <HiOutlineChevronDown size={50} color="black" />
         </motion.div>
       </div>
       <Contact />

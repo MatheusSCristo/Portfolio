@@ -43,32 +43,34 @@ const About = () => {
           />
         </div>
         <div className="flex flex-col gap-5 items-center">
-          <h1 className="text-3xl md:text-5xl xl:text-7xl font-bold">Sobre mim</h1>
-          <div className="text-xl md:text-2xl break-words xl:w-[900px] flex flex-col gap-4 font-text">
+          <h1 className="text-3xl md:text-5xl xl:text-7xl font-bold">
+            Sobre mim
+          </h1>
+          <div className="text-xl md:text-2xl break-words xl:w-[900px] flex flex-col gap-4 font-text ">
             <p>
-              Desde que iniciei minha trajetória no desenvolvimento de software
-              em 2023, venho cultivando não só o domínio técnico, mas também
-              habilidades essenciais que impulsionam meu crescimento contínuo
-              como profissional.
+              Busco constantemente gerar valor por meio de soluções que impactam
+              positivamente produtos, processos e pessoas. Mais do que domínio
+              técnico, desenvolvi uma abordagem centrada em entender
+              profundamente os problemas, atuando com clareza, organização e
+              propósito em cada entrega.
             </p>
             <p>
-              Sou uma pessoa curiosa e autodidata, com facilidade para aprender
-              rapidamente e me adaptar a novas situações. Encaro desafios como
-              oportunidades de evolução e busco sempre entender o problema além
-              da solução técnica, prezando pela clareza, organização e propósito
-              no que construo. Tenho um forte senso de responsabilidade e
-              comprometimento com entregas de qualidade. Gosto de colaborar,
-              ouvir diferentes pontos de vista e contribuir ativamente em
-              equipes, sempre com foco em agregar valor ao produto e à
-              experiência do usuário.
+              Sou movido por desafios e aprendizado contínuo. Tenho facilidade
+              para me adaptar a diferentes contextos e colaborar de forma
+              construtiva em equipes multidisciplinares. Acredito que escuta
+              ativa, comunicação clara e pensamento crítico são fundamentais
+              para o sucesso de qualquer projeto.
             </p>
 
             <p>
-              Acredito que a comunicação eficaz e o pensamento crítico são tão
-              importantes quanto saber programar. Minha trajetória tem sido
-              marcada pela perseverança, iniciativa e vontade genuína de crescer
-              — características que carrego em cada projeto, seja em ambientes
-              acadêmicos, corporativos ou pessoais.
+              Minha experiência inclui participação em iniciativas que
+              resultaram em melhorias reais em sistemas acadêmicos e
+              corporativos, desde a reformulação de interfaces até a
+              implementação de funcionalidades que otimizam fluxos internos e
+              ampliam a eficiência operacional. Em todos os contextos em que
+              atuei, contribui com responsabilidade, proatividade e foco em
+              qualidade, buscando sempre entregar soluções que façam sentido
+              para o usuário final.
             </p>
           </div>
         </div>
