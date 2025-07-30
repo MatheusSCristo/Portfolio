@@ -59,13 +59,13 @@ const Trajectory = () => {
         </div>
         <div className="relative">
           {/* Linha de fundo fixa */}
-          <div className="absolute left-1/2 h-full w-0.5 bg-gray-100"></div>
+          <div className="absolute right-0 md:left-1/2 h-full w-0.5 bg-gray-100"></div>
           {/* Linha animada que cresce com o scroll */}
           <motion.div
-            className="absolute left-1/2 w-0.5 bg-emerald-300 origin-top z-10"
+            className="absolute right-0 md:left-1/2 w-0.5 bg-emerald-300 origin-top z-10"
             style={{ height: timelineHeight }}
           ></motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 pr-8 md:pr-0">
             <motion.div
               className="bg-white p-6 rounded-lg shadow-lg shadow-green-500/30 border border-green-200 relative"
               variants={cardVariants}
@@ -75,7 +75,7 @@ const Trajectory = () => {
               custom={0}
             >
               <motion.div
-                className="absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-4 border-white z-20"
+                className="absolute -right-2 xl:-right-2 md:-right-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-4 border-white z-20"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}
@@ -110,7 +110,7 @@ const Trajectory = () => {
                   }}
                 />
               </motion.div>
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-3">
                 <div>
                   <h2 className="text-4xl font-semibold text-gray-900">
                     Desenvolvedor Júnior
@@ -122,7 +122,7 @@ const Trajectory = () => {
                     Jun. 2025 - Presente
                   </p>
                 </div>
-                <span className="bg-emerald-100 text-emerald-700 text-xl font-semibold px-3 py-1 rounded-full">
+                <span className="bg-emerald-100 text-emerald-700 text-lg sm:text-xl font-semibold px-3 py-1 rounded-full self-start">
                   Atual
                 </span>
               </div>
@@ -173,7 +173,7 @@ const Trajectory = () => {
               custom={1}
             >
               <motion.div
-                className="absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-4 border-white z-20"
+                className="absolute -right-2 xl:-left-2 md:-left-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-4 border-white z-20"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }}
@@ -185,7 +185,7 @@ const Trajectory = () => {
                   ),
                 }}
               ></motion.div>
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-3">
                 <div>
                   <h2 className="text-4xl font-semibold text-gray-900">
                     Estagiário Desenvolvimento
@@ -197,7 +197,7 @@ const Trajectory = () => {
                     Dez. 2024 - Maio. 2025 • Natal, RN
                   </p>
                 </div>
-                <span className="bg-gray-100 text-gray-700 text-xl font-semibold px-3 py-1 rounded-full">
+                <span className="bg-gray-100 text-gray-700 text-lg sm:text-xl font-semibold px-3 py-1 rounded-full self-start">
                   Concluído
                 </span>
               </div>
@@ -243,7 +243,7 @@ const Trajectory = () => {
               custom={2}
             >
               <motion.div
-                className="absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-4 border-white z-20"
+                className="absolute -right-2 xl:-right-2 md:-right-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full border-4 border-white z-20"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{ delay: 0.7, duration: 0.4, ease: "easeOut" }}
@@ -278,7 +278,7 @@ const Trajectory = () => {
                   }}
                 />
               </motion.div>
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-3">
                 <div>
                   <h2 className="text-4xl font-semibold text-gray-900">
                     Bolsista em Projeto de Pesquisa
@@ -290,7 +290,7 @@ const Trajectory = () => {
                     Nov. 2024 - Remoto • Natal, RN
                   </p>
                 </div>
-                <span className="bg-emerald-100 text-emerald-700 text-xl font-semibold px-3 py-1 rounded-full">
+                <span className="bg-emerald-100 text-emerald-700 text-lg sm:text-xl font-semibold px-3 py-1 rounded-full self-start">
                   Atual
                 </span>
               </div>

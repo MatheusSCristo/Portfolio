@@ -28,25 +28,26 @@ const About = () => {
     <section id="about" className="xl:h-screen w-full p-6 ">
       <motion.div
         ref={ref}
-        className="flex flex-col xl:flex-row gap-[10%] items-center"
+        className="flex flex-col xl:flex-row gap-8 lg:gap-[5%] xl:gap-[10%] items-center max-w-7xl mx-auto"
         variants={variants}
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <div className="w-[250px] h-[250px] md:w-[450px] md:h-[450px] relative">
+        <div className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] 2xl:w-[450px] 2xl:h-[450px] relative shrink-0">
           <Image
             src={"/images/profileDesktop.svg"}
             alt="Profile"
             fill
-            className="object-cover"
+            className="object-contain"
+            priority
           />
         </div>
-        <div className="flex flex-col gap-5 items-center">
-          <h1 className="text-3xl md:text-5xl xl:text-7xl font-bold">
+        <div className="flex flex-col gap-5 items-center text-center xl:text-left xl:items-start">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold">
             Sobre mim
           </h1>
-          <div className="text-xl md:text-2xl break-words xl:w-[900px] flex flex-col gap-4 font-text ">
+          <div className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl break-words max-w-4xl xl:max-w-[900px] flex flex-col gap-4 font-text px-4 xl:px-0">
             <p>
               Busco constantemente gerar valor por meio de soluções que impactam
               positivamente produtos, processos e pessoas. Mais do que domínio
