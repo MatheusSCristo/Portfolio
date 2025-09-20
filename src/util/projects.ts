@@ -6,7 +6,7 @@ const projects = [
     techs: ["SpringBoot", "Vue", "PostgreSQL"],
     deploy: "https://matriculaai.imd.ufrn.br/",
     github: "https://github.com/bora-things",
-    image: "/images/MatriculaAi.png",
+    image: "/images/matriculaAi.png",
   },
   {
     title: "Sigest Online",
