@@ -20,18 +20,17 @@ type propsType = {
 
 const Card = ({ project, index }: propsType) => {
   const ref = useRef(null);
-  
+
   return (
     <div ref={ref} className="overflow-x-hidden">
       <motion.div
-        className={`gap-5 ${
+        className={`gap-10 ${
           index % 2 != 0 && "flex-row-reverse "
         } flex p-5 rounded-lg `}
-        initial={{ opacity: 0,x: index % 2?-500:500 }}
-        whileInView={{ opacity: 1,x:0 }}
-        viewport={{margin:"-150px 0px -400px 0px"}}
-        transition={{duration:1.2,ease:"easeInOut"}}
-        
+        initial={{ opacity: 0, x: index % 2 ? -500 : 500 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ margin: "-150px 0px -400px 0px" }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
       >
         <div className="flex flex-col gap-2 items-center">
           <div className="w-[600px] h-[350px] relative rounded-3xl hover:scale-110 duration-500">
@@ -48,7 +47,9 @@ const Card = ({ project, index }: propsType) => {
             <Link
               href={project.github}
               target="_blank"
-              className="gap-2 font-bold text-2xl px-4 py-1 border border-gray-400 flex items-center justify-center rounded-lg"
+              className={`gap-2 font-bold text-2xl px-4 py-1 border border-gray-400 flex items-center justify-center rounded-lg ${
+                project.github == "" ? "opacity-50 cursor-not-allowed" : ""
+              }`}
             >
               GitHub
               <FaGithub />
@@ -63,10 +64,16 @@ const Card = ({ project, index }: propsType) => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center w-[600px] gap-5">
+        <div className="flex flex-col items-center w-[800px] gap-5">
           <div className="gap-2 flex items-center flex-col">
             <h1 className="text-4xl font-bold ">{project.title}</h1>
-            <p className="text-xl font-text">{project.description}</p>
+            <div className="text-xl font-text text-left">
+              {project.description.split("\n").map((paragraph, index) => (
+                <p key={index} className={index > 0 ? "mt-4" : ""}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
           <div className="flex gap-2">
             {getTechIcons(project.techs).map((tech) => (

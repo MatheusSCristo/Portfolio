@@ -8,13 +8,16 @@ import {
 import {
   SiFirebase,
   SiJunit5,
+  SiMysql,
   SiNextdotjs,
+  SiNodedotjs,
   SiPostgresql,
   SiPrisma,
   SiSpringboot,
   SiSpringsecurity,
   SiTailwindcss,
-  SiTypescript
+  SiTypescript,
+  SiVuedotjs
 } from "react-icons/si";
 
 const getTechIcons = (techs: string[]) => {
@@ -25,6 +28,8 @@ const getTechIcons = (techs: string[]) => {
     const techsIcons: techsIconsType = {
       React: { icon: FaReact, title: "React" },
       Java: { icon: FaJava, title: "Java" },
+      Node: { icon: SiNodedotjs, title: "Node.js" },
+      mySQL: { icon: SiMysql, title: "MySQL" },
       Javascript: { icon: FaJs, title: "JavaScript" },
       Next: { icon: SiNextdotjs, title: "Next" },
       PostgreSQL: { icon: SiPostgresql, title: "PostgreSQL" },
@@ -35,7 +40,8 @@ const getTechIcons = (techs: string[]) => {
       Firebase: { icon: SiFirebase, title: "Firebase" },
       Prisma: { icon: SiPrisma, title: "Prisma" },
       JUnit: { icon: SiJunit5, title: "JUnit" },
-      SpringSecurity: { icon: SiSpringsecurity, title: "Spring Security" }
+      SpringSecurity: { icon: SiSpringsecurity, title: "Spring Security" },
+      Vue:{icon:SiVuedotjs,title:"Vue.js"},
     };
     return techs.map((tech) => {
       return techsIcons[tech];

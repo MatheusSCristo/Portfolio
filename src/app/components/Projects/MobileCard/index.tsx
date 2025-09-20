@@ -84,7 +84,13 @@ const MobileCard = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-5">
-                <p className="w-[300px] font-text ">{project.description}</p>
+                <div className="w-[300px] font-text text-left">
+                  {project.description.split('\n').map((paragraph, index) => (
+                    <p key={index} className={index > 0 ? 'mt-4' : ''}>
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
                 <div className="flex gap-2 flex-wrap">
                   {getTechIcons(project.techs).map((icon) => (
                     <div
